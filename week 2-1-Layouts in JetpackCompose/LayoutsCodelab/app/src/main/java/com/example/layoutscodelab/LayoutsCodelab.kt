@@ -99,7 +99,7 @@ fun StaggeredGrid(
             // Track the width and max height of each row
             val row = index % rows
             rowWidths[row] += placeable.width
-            rowHeights[row] = max(rowHeights[row], placeable.height)
+            rowHeights[row] = Math.max(rowHeights[row], placeable.height)
 
             placeable
         }
